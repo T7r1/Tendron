@@ -10,8 +10,8 @@ public void draw()
 {
   background(255);
   //  bob.show();
-scale(.02);
-  Cluster c = new Cluster(100, width*50/2, height*50/2); // initial number of segments in the tendril and starting (x,y) coordinate
+scale(.04);
+  Cluster c = new Cluster(100, width*50/4, height*50/4); // initial number of segments in the tendril and starting (x,y) coordinate
 
 }
 public void mousePressed()
