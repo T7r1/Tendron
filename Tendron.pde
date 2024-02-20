@@ -10,7 +10,7 @@ public void draw()
 {
   background(255);
   //  bob.show();
-strokeWeight(2);
+strokeWeight(4);
 scale(.04);
   Cluster c = new Cluster(100, (width/2)*1/.04, (height/2)*1/.04); // initial number of segments in the tendril and starting (x,y) coordinate
 
