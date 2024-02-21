@@ -26,7 +26,7 @@ float eX=sX+(float)Math.cos(myAngle)*myNumSegments;
 float eY=sY+(float)Math.sin(myAngle)*myNumSegments;
 line(sX,sY,eX,eY);
 if (Math.random()<myNumSegments/10000){
-drawBranches(eX,eY,myNumSegments*2+30,Math.random()*PI;
+drawBranches(eX,eY,myNumSegments*2+30,Math.random()*PI);
   }
 sX=eX;
 sY=eY;
