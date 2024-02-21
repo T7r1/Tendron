@@ -25,8 +25,12 @@ myAngle+=Math.random()*.4-.2;
 float eX=sX+(float)Math.cos(myAngle)*myNumSegments;
 float eY=sY+(float)Math.sin(myAngle)*myNumSegments;
 line(sX,sY,eX,eY);
+if (Math.random()<myNumSegments/10000){
+drawBranches(eX,eY,myNumSegments*2+30,myAngle);
+  }
 sX=eX;
 sY=eY;
+
 }
 if (myNumSegments>5){
 Cluster d=new Cluster(myNumSegments/2, sX, sY);
