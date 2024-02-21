@@ -1,4 +1,7 @@
 Tendril bob=new Tendril(100,PI,250,250);
+private double fractionLength = .8; 
+private int smallestBranch = 10; 
+private double branchAngle = .2;  
 public void setup()
 {
   size(1000, 1000);  
@@ -19,3 +22,19 @@ public void mousePressed()
 {
   redraw();
 }
+public void drawBranches(float x,float y, double branchLength, double angle) 
+{   
+  double an1=angle+branchAngle;
+  double an2=angle-branchAngle;
+  branchLength*=fractionLength;
+  float ex1=(float)(Math.cos(an1)*branchLength)+x;
+  float ey1=(float)(Math.sin(an1)*branchLength)+y; 
+  float ex2=(float)(Math.cos(an2)*branchLength)+x;
+  float ey2=(float)(Math.sin(an2)*branchLength)+y;
+  line(x,y,ex1,ey1);
+  line(x,y,ex2,ey2);
+  if (branchLength>smallestBranch){
+  drawBranches(ex1,ey1,branchLength,an1);
+  drawBranches(ex2,ey2,branchLength,an2);
+  }
+} 
