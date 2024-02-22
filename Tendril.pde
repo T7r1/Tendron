@@ -18,7 +18,7 @@ myAngle=theta;
   }
   public void show()
   {
-strokeWeight(myNumSegments/30);
+strokeWeight(myNumSegments/15);
 
 float sX=myX;
 float sY=myY;
@@ -28,6 +28,7 @@ float eX=sX+(float)Math.cos(myAngle)*myNumSegments;
 float eY=sY+(float)Math.sin(myAngle)*myNumSegments;
 line(sX,sY,eX,eY);
 if (Math.random()<myNumSegments/10000){
+strokeWeight(myNumSegments/25);
 drawBranches(eX,eY,myNumSegments*1.8+40,Math.random()*PI);
   }
 sX=eX;
