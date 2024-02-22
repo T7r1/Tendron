@@ -18,7 +18,7 @@ myAngle=theta;
   }
   public void show()
   {
-strokeWeight(myNumSegments/15);
+strokeWeight(myNumSegments/10+2);
 
 float sX=myX;
 float sY=myY;
