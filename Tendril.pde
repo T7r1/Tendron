@@ -32,7 +32,7 @@ sX=eX;
 sY=eY;
 
 }
-if (myNumSegments>5){
+if (myNumSegments>10){
 Cluster d=new Cluster(myNumSegments/2, sX, sY);
 }
   }
